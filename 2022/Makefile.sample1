@@ -1,0 +1,5 @@
+all: sample1
+
+sample1: sample1.cpp
+	g++ -o sample1 sample1.cpp $$(pkg-config opencv --cflags) $$(pkg-config opencv --libs)
+

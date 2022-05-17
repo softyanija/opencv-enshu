@@ -1,0 +1,34 @@
+all: sample1 sample2 sample3 sample4
+
+sample1: sample1.cpp
+	g++ -o sample1 sample1.cpp $$(pkg-config opencv --cflags) $$(pkg-config opencv --libs)
+
+sample2: sample2.cpp
+	g++ -o sample2 sample2.cpp $$(pkg-config opencv --cflags) $$(pkg-config opencv --libs)
+
+sample3: sample3.cpp
+	g++ -o sample3 sample3.cpp $$(pkg-config opencv --cflags) $$(pkg-config opencv --libs)
+
+sample4: sample4.cpp
+	g++ -o sample4 sample4.cpp $$(pkg-config opencv --cflags) $$(pkg-config opencv --libs)
+
+sample5: sample5.cpp
+	g++ -o sample5 sample5.cpp $$(pkg-config opencv --cflags) $$(pkg-config opencv --libs)
+
+sample5-1: sample5-1.cpp
+	g++ -o sample5-1 sample5-1.cpp $$(pkg-config opencv --cflags) $$(pkg-config opencv --libs)
+
+sample6: sample6.cpp
+	g++ -o sample6 sample6.cpp $$(pkg-config opencv --cflags) $$(pkg-config opencv --libs)
+
+sample7: sample7.cpp
+	g++ -o sample7 sample7.cpp $$(pkg-config opencv --cflags) $$(pkg-config opencv --libs)
+
+camera_th: camera_th.cpp
+	g++ -o camera_th camera_th.cpp $$(pkg-config opencv --cflags) $$(pkg-config opencv --libs)
+
+sample9: sample9.cpp
+	g++ -o sample9 sample9.cpp $$(pkg-config opencv --cflags) $$(pkg-config opencv --libs)
+
+roi_camera: roi_camera.cpp
+	g++ -o roi_camera roi_camera.cpp $$(pkg-config opencv --cflags) $$(pkg-config opencv --libs)
